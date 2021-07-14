@@ -1,0 +1,392 @@
+/*--------
+    fonts 
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap');
+
+/*------
+    Reset
+------------*/
+*{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    background-color: white;
+}
+
+/* Common Styles */
+.flexible-container{
+    display: flex;
+    width: auto;
+    margin-bottom: 50px;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.half-width{
+    width: 50%;
+    padding-left: 5%;
+}
+.half-width img{
+    width: 556px;
+    height: 438px;
+    padding-top: 70px;
+
+}
+
+.link-button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(224, 61, 61);
+    padding: 10px 40px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: transform 1s ease-in-out;
+    margin-top: 90px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.link-button::before{
+    width: 100%;
+}
+/*-------------------
+    put the mouse over the button for 1s 
+--------------------------------------------------*/
+.link-button:hover {
+    transform: scale(1.5) rotate(360deg);   
+}
+
+h1{
+    width: 485px;
+    height: 150px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+
+/* -------------------------------
+        Top Banner Styles
+------------------------------- */
+.top-banner{
+    background-color: #2D25A0;
+    background-position: inherit;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#top-button{
+    margin-top: 90px;
+}
+
+.header-title{
+    padding-left: 150px;
+    padding-top: 100px;
+}
+
+.top-banner img{
+    /* padding-top: 70px; */
+    margin-top: 3px;
+    margin-right: 120px;
+    height: 438px;
+}
+
+/* -------------------------------
+        Player Blog Styles 
+------------------------------- */
+.player-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog{
+    display: grid;
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    align-items: center;
+    width: 330px;
+    height: 474px;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 10px 10px 40px rgb(212, 209, 209);
+}
+
+.blog .thumbnail img{
+    width: 91%px;
+    height: 256px;
+    margin-left: 3%;
+}
+
+.blog-info{
+    margin-left: 16px;
+    width: 300px;
+    height: 154px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+}
+.blog-info h3{
+    font-size: 28px;
+    line-height: 40px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.blog-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.blog-story{
+    color: #9F9F9F;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* -------------------------------
+     Match Highlights Styles
+------------------------------- */
+.highlights-paragraph{
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 70px;
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.highlights-paragraph h1{
+    color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+
+}
+
+.highlights-paragraph img{
+    padding-top: 5px;
+    width: 567px;
+    height: 427px;
+}
+
+/* -------------------------------
+    Footbal Footer Logo Styles
+------------------------------- */
+.football-footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.football-footer-logo img{
+    width: 450px;
+    height: 70px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* -------------------------------
+          Footer Styles
+------------------------------- */
+footer{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000000;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.footer-list{
+    list-style-type: None;
+	display: inline-flex;
+    width:auto; 
+    height:auto;
+	padding: 10px;
+    margin-bottom: 15px;
+    color: black;
+    background: #0b0d1723;
+    opacity: 0.5;
+    border-radius: 18px;
+}
+
+/* -------------------------------
+         Media Queries
+------------------------------- */
+
+/* Desktop Devices */
+@media only screen and (min-width: 689px)and (max-width: 992px)
+{
+    #top-header-title{
+        margin-bottom: 50px;
+    }
+    .link-button:hover {
+    transform: scale(1.5) rotate(360deg);   
+    }
+    .player-blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .match-highlights{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+        height: 400%;
+    }
+    
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    
+    /* Common Styles */
+
+    body{
+        margin-left: auto;
+        overflow-x: hidden;
+    }
+
+    .link-button{
+        display: inline-block;
+        text-decoration: none;
+        background-color: rgb(224, 61, 61);
+        padding: 10px 40px;
+        color: white;
+        font-weight: 700;
+        border-radius: 5px;
+        transition: transform 1s ease-in-out;
+        margin-top: 40px;
+    }
+    .link-button:hover {
+        transform: scale(1.5) rotate(360deg);   
+    }
+
+    .flexible-container{
+        width: 100%;
+    }
+
+    /* Top Banner Styles */
+
+    .top-banner{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        padding: 0;
+        margin-right: 0;
+        margin: 0;
+    }
+
+    .header-title{
+        margin-left: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-banner img{
+        margin-top: 50px;
+        margin-right: 0;
+        height: 438px;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 60px;
+        width: 10px;
+    }
+
+    .half-width{
+        width: 100%;
+        margin-right: 0;
+    }
+    .half-width img{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Player Blogs Style */
+
+    .top-players{
+        grid-template-columns: 1, 100%; 
+        width: 80%;
+    }
+    .player-blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .blog{
+        display: grid;
+        grid-template-columns: 1, 100%;
+        grid-gap: 10px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    /* Match Highlihght Section Styles */
+    .match-highlights{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 80%;
+        height: 400%;
+    }
+    .match-highlights h1{
+        font-size: 25px;
+        margin-left: 11%;
+        height: 50px;
+        width: 100%;
+        line-height: 40px;
+    }
+    .match-highlights p{
+        font-size: 20px;
+        justify-content: center;
+        margin-left: 10%;
+        margin-top: 50px;
+    }
+    .match-highlights .link-button{
+        margin-left: 15%;
+    }
+
+    /* Footer styles */
+
+    .football-footer-logo{
+        width: 100%;
+    }
+    .football-footer-logo img{
+        width: 203px;
+        height: 250px;
+    }
+}

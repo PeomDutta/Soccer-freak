@@ -88,7 +88,12 @@ h1{
     align-items: center;
     justify-content: center;
     color: white;
+    
 }
+.top-banner h1{
+    margin-bottom: 30px;
+}
+
 #top-button{
     margin-top: 90px;
 }
